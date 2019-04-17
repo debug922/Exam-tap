@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Exam.Exam792018;
+﻿using Exam.Exam100718;
+using System;
 namespace Exam
 {
     class Program
@@ -11,8 +7,7 @@ namespace Exam
  
         static void Main(string[] args)
         {
-            
-
+           
 
         }
     }
