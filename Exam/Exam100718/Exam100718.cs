@@ -20,6 +20,9 @@ namespace Exam.Exam100718
             {
                 var i1 = i;
                 list.Add((x)=> enumerable.ElementAtOrDefault(i1)*x+enumerable1.ElementAtOrDefault(i1));
+                //usare yield senza le variabili enumerable e list
+                //yield return (x) => enumerable.ElementAtOrDefault(i1) * x + enumerable1.ElementAtOrDefault(i1);
+
             }
             return list;
 
@@ -125,7 +128,8 @@ namespace Exam.Exam100718
             IEnumerable<ILoan> AllLoansNow();
             IEnumerable<ILoan> AllLoansOne(in TU thing,in bool onlyNotEnded);
             bool SearchObj(in string description);
-                    /*     
+          
+          /*     
             2. I parametri nell’interfaccia al punto precedente possono essere dichiarati co/contro varianti? perché?
             perche sono parametri solo in lettura
              */

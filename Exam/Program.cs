@@ -1,5 +1,7 @@
-﻿using Exam.Exam100718;
+﻿using Exam.Exam140618;
 using System;
+using System.Reflection;
+
 namespace Exam
 {
     class Program
@@ -7,7 +9,9 @@ namespace Exam
  
         static void Main(string[] args)
         {
-           
+            
+            Es3.CheckAttribute(Assembly.GetExecutingAssembly());
+            Console.ReadLine();
 
         }
     }

@@ -35,6 +35,9 @@ namespace Exam.Exam07092018
             for (var i = 0; i < count; i++)
             {
                    list.Add(f(enumerable.ElementAtOrDefault(i),enumerable1.ElementAtOrDefault(i)));
+                   //usare yield senza le variabili enumerable e list
+                   //yield return f(enumerable.ElementAtOrDefault(i), enumerable1.ElementAtOrDefault(i));
+
             }
 
             return list;
