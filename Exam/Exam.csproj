@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exam020218\Exam020218.cs" />
     <Compile Include="Exam07092018\Exam792018.cs" />
     <Compile Include="Exam100718\Exam100718.cs" />
     <Compile Include="Exam140618\Exam140618.cs" />
