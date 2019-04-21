@@ -13,21 +13,21 @@ namespace Exam.Exam140618
         {
             if(intSeq==null)
                 throw new ArgumentNullException();
-            if(intSeq.Count()<2)
+            var count = intSeq.Count();
+            if (count<2)
                 throw new ArgumentException();
           
-            for (var i = 0; i <intSeq.Count(); i++)
+            for (var i = 0; i < intSeq.Count(); i++)
             {
-                int a=i-1, b=i;
+                int a = i - 1, b = i;
                 if (i == 0)
                 {
                     a = i;
-                    b =++i;
+                    b = ++i;
                 }
-                var fib=Fibonacci(intSeq.ElementAtOrDefault(a), intSeq.ElementAtOrDefault(b));
-               yield return fib;
+                var fib = Fibonacci(intSeq.ElementAtOrDefault(a), intSeq.ElementAtOrDefault(b));
+                yield return fib;
             }
-
         }
 
         private static IEnumerable<int> Fibonacci(int f1, int f2)
@@ -49,7 +49,7 @@ namespace Exam.Exam140618
         public void FibonacciProvider_intSeqNull_Throw()
         {
             List<int> x = null;
-            Assert.That(() => x.FibonacciProvider(), Throws.TypeOf<ArgumentNullException>());
+            Assert.That(() => x.FibonacciProvider().ToList(), Throws.TypeOf<ArgumentNullException>());
         }
         //fail a causa di yeld
         [Test]

@@ -1,6 +1,5 @@
-﻿using Exam.Exam140618;
+﻿using Exam.Exam180118;
 using System;
-using System.Reflection;
 
 namespace Exam
 {
@@ -9,8 +8,12 @@ namespace Exam
  
         static void Main(string[] args)
         {
-            
-            Es3.CheckAttribute(Assembly.GetExecutingAssembly());
+            var seq = "cippalippa";
+            if(seq.CountUntil(char.IsDigit,null)==0)
+                Console.WriteLine("fuck");
+            var seq1 = "sottocoppe di peltro";
+            if (Es3.FirstDigitPosition("aaa1")==3)
+                Console.WriteLine("fuck1");
             Console.ReadLine();
 
         }

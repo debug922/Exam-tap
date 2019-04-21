@@ -68,6 +68,7 @@
     <Compile Include="Exam07092018\Exam792018.cs" />
     <Compile Include="Exam100718\Exam100718.cs" />
     <Compile Include="Exam140618\Exam140618.cs" />
+    <Compile Include="Exam180118\Exam180118.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
