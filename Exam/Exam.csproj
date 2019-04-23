@@ -64,6 +64,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="170119.cs" />
+    <Compile Include="Exam010219\Exam010219.cs" />
     <Compile Include="Exam020218\Exam020218.cs" />
     <Compile Include="Exam07092018\Exam792018.cs" />
     <Compile Include="Exam100718\Exam100718.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Exam180118\Exam180118.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReplaceTestProfByDavide.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
